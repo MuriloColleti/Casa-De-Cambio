@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Casa De Câmbio</title>
+  </head>
+  <body>
+    <header class="header d-flex justify-content-center">
+      <h1>Casa De Câmbio</h1>
+    </header>
+
+    <main class="container d-flex justify-content-center flex-column align-items-center">
+      <section class="d-flex justify-content-center">
+        <form class="row g-3">
+          <div class="col-auto">
+            <label for="input-currency" class="visually-hidden">Moeda</label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="input-currency"
+              placeholder="Ex:BRL"
+            />
+          </div>
+
+          <div class="col-auto">
+            <button
+              type="button"
+              id="search-button"
+              class="btn btn-primary mb-3">
+              Pesquisar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="currency" class="d-flex justify-content-center"></section>
+        <h2 id="base" class="title-base"></h2>
+        <br>
+        <ul style="max-height: 25rem;" id="currency-list" class="active list-group-item h-25 overflow-auto"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
